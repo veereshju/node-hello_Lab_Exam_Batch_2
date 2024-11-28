@@ -1,0 +1,16 @@
+apiversion: app/v1
+kind: service
+metadata:
+  labels: 
+    app: nodejs
+    name: nodejs
+spec:
+  type: Nodeport
+  ports:
+    protocol: TCP
+    port: 80
+    targetport: 80
+  selctor:
+      app: nodejs
+  
+    
