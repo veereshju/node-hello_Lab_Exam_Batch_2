@@ -2,12 +2,12 @@ FROM node:18-alpine
 
 WORKDIR /app
 
-COPY src/package*.json ./
+COPY package*.json ./
 
 RUN npm install --production --slient
 
 
-COPY src/. .
+COPY /. .
 
 EXPOSE 3000
 
