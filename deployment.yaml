@@ -15,7 +15,7 @@ spec:
         app: nodejs
     spec:
       containers:
-      - name: cafestatic
+      - name: nodejs
         image: lavanya986/nodejs_hello:v1
         ports:
         - containerPort: 80
