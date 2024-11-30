@@ -1,16 +1,15 @@
-apiversion: app/v1
-kind: service
-metadata:
-  labels: 
-    app: nodejs
-    name: nodejs
-spec:
-  type: Nodeport
-  ports:
-    protocol: TCP
-    port: 3000
-    targetport: 3000
-  selector:
-      app: nodejs
   
-    
+    apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    app: nodejs
+  name: nodejs
+spec:
+  type: NodePort
+  ports:
+    - port: 3000
+      targetPort: 3000
+      protocol: TCP
+  selector:
+    app: nodejs
