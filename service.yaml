@@ -9,7 +9,7 @@ spec:
   ports:
     protocol: TCP
     port: 3000
-    targetport: 3017
+    targetport: 3000
   selctor:
       app: nodejs
   
